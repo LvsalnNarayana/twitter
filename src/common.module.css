@@ -1,0 +1,139 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --background: black !important;
+    --text-primary: white !important;
+    --text-secondary: grey !important;
+    --secondary: grey !important;
+    --primary: rgb(29, 155, 240) !important;
+    --primary-hover: rgb(26, 140, 216) !important;
+}
+
+[data-theme='dark'] {
+    --background: black !important;
+    --text-primary: white !important;
+    --text-secondary: #71767b !important;
+    --secondary: grey !important;
+    --primary: rgb(29, 155, 240) !important;
+    --primary-hover: rgb(26, 140, 216) !important;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.center_grid {
+    max-width: min(100%, 1280px);
+    padding: 0% 40px;
+    margin: 0px auto;
+}
+
+.dark {
+    background-color: var(--background);
+    color: var(--text-primary);
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--text-primary);
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: var(--text-primary);
+}
+
+p {
+    margin-bottom: 0px !important;
+    color: var(--text-primary);
+}
+
+.img_fluid {
+    max-width: 100%;
+}
+
+.svg_fill {
+    fill: white;
+}
+
+.svg_fill_primary {
+    fill: rgb(29, 155, 240);
+}
+
+.logo_hover {
+    border-radius: 9999px !important;
+    height: 56px !important;
+    min-width: 52px !important;
+    width: 52px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.logo_hover:hover {
+    background-color: rgba(29, 155, 240, 0.1) !important;
+    border-radius: 9999px !important;
+}
+
+.active {
+    display: none !important;
+}
+
+.inactive {
+    display: block !important;
+}
+
+.svg_active .active {
+    display: block !important;
+}
+
+.svg_active .inactive {
+    display: none !important;
+}
+
+.tweet_btn {
+    background-color: var(--primary) !important;
+    box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px !important;
+    transition-property: background-color, box-shadow !important;
+    transition-duration: 0.2s !important;
+    min-width: 52px !important;
+    min-height: 52px !important;
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+    border: 1px solid rgba(0, 0, 0, 0) !important;
+    border-radius: 9999px !important;
+    color: white !important;
+    text-transform: capitalize !important;
+    width: 90% !important;
+    margin: 4px 0px !important;
+    font-size: 17px !important;
+}
+
+.tweet_btn_modal {
+    background-color: var(--primary) !important;
+    box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px !important;
+    transition-property: background-color, box-shadow !important;
+    transition-duration: 0.2s !important;
+    min-width: 36px !important;
+    min-height: 36px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    border: 1px solid rgba(0, 0, 0, 0) !important;
+    border-radius: 9999px !important;
+    color: white !important;
+    text-transform: capitalize !important;
+    margin: 12px 0px 0px 12px !important;
+    font-size: 15px !important;
+    line-height: 100%;
+}
+
+.tweet_btn:hover,
+.tweet_btn_modal:hover {
+    background-color: var(--primary-hover) !important;
+}
